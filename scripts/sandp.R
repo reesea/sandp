@@ -25,4 +25,4 @@ cor(data)
 attach(data)
 
 # Volume fluctuated the most
-plot(Volume)
+plot(Volume, col = "magenta")
