@@ -26,3 +26,4 @@ attach(data)
 
 # Volume fluctuated the most
 plot(Volume, col = "magenta")
+boxplot(data$Volume, col = "green")
