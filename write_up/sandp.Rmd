@@ -1,0 +1,36 @@
+---
+title: "sandp"
+author: "Anthony Reese"
+date: "March 19, 2018"
+output: html_document
+---
+
+```{r}
+load("sandp.RData")
+```
+# Data
+Here is a look at column names.
+```{r}
+names(data)
+```
+Here's a summary.
+```{r}
+summary(data)
+```
+Here's a pairwise comparison.
+```{r}
+pairs(data[,-8])
+```
+Correlatiions among predictors.
+```{r}
+cor(data[,-8])
+```
+```{r}
+attach(data)
+```
+# Figure
+Here's figures of Volume.
+```{r, fig.align='center'}
+plot(Volume, col = "magenta")
+boxplot(Volume, col = "blue")
+```

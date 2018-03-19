@@ -17,10 +17,11 @@ dim(data)
 
 summary(data)
 
-pairs(data)
+
+pairs(data[,-8])
 
 # Correlatiions among predictors
-cor(data)
+cor(data[,-8])
 
 attach(data)
 
