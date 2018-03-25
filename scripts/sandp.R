@@ -1,29 +1,27 @@
 # Load packages
-require(readxl)
+require(xlsx)
 
 ## READ IN DATA AND ORGANIZE ####
 # Read in data
 setwd("E:/DataSets/MarketData")
-data = read_excel("data/spy.xlsx")
-
+sp <- read.xlsx("data/SPY.xlsx", 1)
 # View column names
-names(data)
+names(sp)
 
 # Check for quantitative variables
-str(data)
+str(sp)
 
 # No. of rows and columns
-dim(data)
+dim(sp)
 
-summary(data)
+summary(sp)
 
-
-pairs(data[,-8])
+pairs(sp[,-8])
 
 # Correlatiions among predictors
-cor(data[,-8])
+cor(sp[,-8])
 
-attach(data)
+attach(sp)
 
 # Volume fluctuated the most
 plot(Volume, col = "magenta")
