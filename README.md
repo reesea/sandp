@@ -8,3 +8,4 @@ Initially examining the numerical and graphical summaries of the data.
 - Quadratic Discriminant Analysis
 - K-Nearest Neighbors
 - Feature Engineering
+- Machine Learning
